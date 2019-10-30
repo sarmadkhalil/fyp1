@@ -10,13 +10,22 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+<<<<<<< HEAD
         "@fortawesome/fontawesome-free": "^5.9.0",
         "axios": "^0.19",
+=======
+        "@fortawesome/fontawesome-free": "^5.8.2",
+        "axios": "^0.18.1",
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
         "bootstrap": "^4.1.0",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
+<<<<<<< HEAD
         "lodash": "^4.17.13",
+=======
+        "lodash": "^4.17.5",
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
@@ -25,6 +34,15 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+<<<<<<< HEAD
         "admin-lte": "^3.0.0-beta.1"
+=======
+        "admin-lte": "^3.0.0-alpha.2",
+        "moment": "^2.24.0",
+        "sweetalert2": "^8.12.1",
+        "vform": "^1.0.1",
+        "vue-progressbar": "^0.7.5",
+        "vue-router": "^3.0.6"
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
     }
 }

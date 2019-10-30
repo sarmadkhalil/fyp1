@@ -45,7 +45,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
+<<<<<<< HEAD
       <img src="../img/rocket.png" alt="Sales Order management logo" class="brand-image img-circle elevation-3"
+=======
+      <img src="./img/rocket.png" alt="Sales Order management logo" class="brand-image img-circle elevation-3"
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
            style="opacity: .8">
       <span class="brand-text font-weight-light">Sales Order</br>management</span>
     </a>
@@ -53,6 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
+<<<<<<< HEAD
       <a href="{{ url('profile') }}" class="nav-link ">
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -63,6 +68,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
       </div>
       </a>
+=======
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="./img/customer-support.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">
+          {{ Auth::user()->name }}
+          </a>
+        </div>
+      </div>
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -71,12 +88,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
 
               <li class="nav-item">
+<<<<<<< HEAD
               <a href="{{ url('home') }}" class="nav-link ">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
                     Dashboard
                 </p>
                 </a>
+=======
+                <router-link to="/dashboard" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                      Dashboard
+                    </p>
+                </router-link>
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
               </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link ">
@@ -87,6 +113,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
             <ul class="nav nav-treeview">
+<<<<<<< HEAD
             <?php
                       $user = Auth::user()->user_type;
                       if($user == 'admin'){?><li class="nav-item">
@@ -132,12 +159,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Audit</p>
                 </a>
               </li>
+=======
+              <li class="nav-item">
+                <router-link to="/users" class="nav-link">
+                  <i class="fas fa-users"></i>
+                  <p>Users</p>
+                </a>
+              </li>
+            </ul>
+            <li class="nav-item">
+                <router-link to="/profile" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Profile
+                  </p>
+                </router-link>
+              </li>
+
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                  <i class="nav-icon fas fa-power-off"></i>
+<<<<<<< HEAD
                     logout
+=======
+                    {{ __('Logout') }}
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
                 </a>
 
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -157,11 +206,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
   
     <div class="content">
       <div class="container-fluid">
+<<<<<<< HEAD
         @yield('content')
       </div>
     </div>
     <!-- /.content -->
 </div>
+=======
+      <router-view></router-view>
+
+      <vue-progress-bar></vue-progress-bar>
+      </div>
+    </div>
+    <!-- /.content -->
+  </div>
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->

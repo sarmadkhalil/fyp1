@@ -161,8 +161,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+=======
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
 
         /*
          * Package Service Providers...
@@ -176,7 +179,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         OwenIt\Auditing\AuditingServiceProvider::class,
+=======
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
 
     ],
 
@@ -228,9 +234,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+<<<<<<< HEAD
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
+=======
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
 
     ],
 

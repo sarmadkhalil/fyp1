@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/', function () {
         return view('home');
@@ -32,3 +33,14 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Auth::routes();
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('{path}', 'HomeController@index')->where('path','([A-z\d-\/_.]+)?' );
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f

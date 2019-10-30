@@ -3,7 +3,11 @@
 
 // Variables
 @import 'variables';
+<<<<<<< HEAD
 $fa-font-path: '../webfonts';
+=======
+$fa-font-path: "../webfonts";
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -11,4 +15,12 @@ $fa-font-path: '../webfonts';
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+<<<<<<< HEAD
 
+=======
+ 
+.router-link-exact-active{
+    background-color: #1dfa;
+    color: #fff !important;
+}
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f

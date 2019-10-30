@@ -14,11 +14,18 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
+<<<<<<< HEAD
         \App\Http\Middleware\TrustProxies::class,
+=======
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
         \App\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+<<<<<<< HEAD
+=======
+        \App\Http\Middleware\TrustProxies::class,
+>>>>>>> 034f624a8f90e69bcb845dd7deb2a2130fe5410f
     ];
 
     /**
